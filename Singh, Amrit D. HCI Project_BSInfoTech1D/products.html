@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<style>
+
+
+body
+{
+  background-image:url('bg.jpg');
+}
+
+.wrap
+{
+  margin:50px auto 0 auto;
+  width:100%;
+  display:flex;
+  align-items:space-around;
+  max-width:1200px;
+}
+
+ul{
+	float: left;
+	list-style-type: none;
+	margin-top: 25px;
+	margin-left: 30px;
+	font-size: 20px;
+	font-family: didot, serif;
+}
+ul li{
+	display: inline-block;
+	
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 20px;
+	border: 3px solid transparent;
+	transition:0.6s ease;
+}
+ul li a:hover{
+	background-color:#eee2dc;
+	color: #00;
+	
+}
+.row {
+  display:table;
+}
+.column {
+float: left;
+  flex: 33.33%;
+  padding: 3px;
+  }
+.tile
+{
+  width:360px;
+  height:360px;
+  margin:10px;
+  background-color:#800000;
+  display:flex;
+  background-size:cover;
+  position:relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  overflow:hidden;
+  color:white;
+  font-family:'Century Gothic';
+  
+}
+.tile img
+{
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  transition: all 0.4s ease-out;
+}
+.tile .text
+{
+/*   z-index:99; */
+  position:absolute;
+  padding:30px;
+  height:calc(100% - 60px);
+}
+.tile h1
+{
+ 
+  font-weight:300;
+  margin:0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.tile h2
+{
+ 
+  font-weight:300;
+  margin:0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.tile h3
+{
+ 
+  font-weight:300;
+  margin:0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.animate-text
+{
+  opacity:0;
+  transition: all 0.6s ease-in-out;
+}
+.tile:hover
+{
+/*   background-color:#99aeff; */
+box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+  transform:scale(1.05);
+}
+.tile:hover img
+{
+  opacity: 0.2;
+}
+.tile:hover .animate-text
+{
+  transform:translateX(0);
+  opacity:1;
+}
+
+
+@media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:400px;
+  }
+  
+
+}
+</style>
+</head>
+
+
+<body>
+
+<nav>
+<ul>
+			<li><a href="index.html">Back</a></li>
+			<li><a href="about us.html">About Us</a></li>
+	
+		
+	</ul>
+</nav>
+
+
+<div class="wrap">
+
+<div class="row">
+<div class="column">
+<div class="tile"> 
+  <img src="images/kimbap.jpg"/>
+  <div class="text">
+  <h1 class="animate-text">Bulgogi Kimbap</h1>
+  <h2 class="animate-text">Php 120</h2>
+  <h3 class="animate-text">Bulgogi Kimbap (불고기 김밥) is Korean seaweed
+  rice rolls that are filled with Bulgogi (Korean marinated BBQ beef) and
+  other vegetable fillings.</h3>
+ </div>
+  </div>
+ </div>
+
+<div class="column">
+<div class="tile"> 
+  <img src="images/tteokbokki.jpg"/>
+  <div class="text">
+  <h1 class="animate-text">Tteokbokki</h1>
+  <h2 class="animate-text">Php 150</h2>
+  <h3 class="animate-text">Tteokbokki is chewy rice cakes cooked in a red,
+  spicy broth. It’s a popular Korean street food.</h3>
+  </div>
+  </div>
+ </div>
+  
+  <div class="column">
+  <div class="tile"> 
+  <img src="images/ramen.jpg"/>
+  <div class="text">
+  <h1 class="animate-text">Ramen</h1>
+  <h2 class="animate-text">Php 120</h2>
+  <h3 class="animate-text">Ramyeon is one of South Korea’s favourite
+  comfort foods. It is made up of dried, curly noodles, freeze-dried 
+  vegetables and a sachet of powdered soup, and is rehydrated in boiling
+  water to make a quick, tasty meal. It comes in a variety of flavours,
+  and can be eaten by itself or with added toppings.</h3>
+  </div>
+  </div>
+ </div>
+ 
+ <div class="row">
+ <div class="column">
+   <div class="tile"> 
+  <img src="images/kimchi.jpg"/>
+  <div class="text">
+  <h1 class="animate-text">Kimchi</h1>
+  <h2 class="animate-text">Php 100</h2>
+  <h3 class="animate-text">Kimchi is a type of fermented food that 
+  originates from Korea. Kimchi varies depending on the main 
+  vegetables used. </h3>
+ </div>
+  </div>
+ </div>
+ 
+ <div class="column">
+  <div class="tile"> 
+  <img src="images/bibimbap.jpg"/>
+  <div class="text">
+  <h1 class="animate-text">Bibimbap</h1>
+  <h2 class="animate-text">Php 190</h2>
+  <h3 class="animate-text">Bibimbap simply translates to “mixed rice with
+  meat and assorted vegetables“. You can make endless variations to this 
+  dish depending on your preference. </h3>
+ </div>
+  </div>
+ </div>
+ 
+ <div class="column">
+  <div class="tile"> 
+  <img src="images/corn dog.jpg"/>
+  <div class="text">
+  <h1 class="animate-text">Corn Dog</h1>
+  <h2 class="animate-text">Php 70</h2>
+  <h3 class="animate-text">Korean corn dogs is a hot dog
+  sausage coated in a sweet and savory batter, deep-fried until golden 
+  and crispy. This Korean style corn dog is perfectly balanced between
+  sweetness, savoriness, and crispness, making it an unforgettable snack 
+  that is perfect for any time of day.</h3>
+ </div>
+  </div>
+ </div>
+ 
+ <div class="row">
+ <div class="column">
+  <div class="tile"> 
+  <img src="images/melona.jpg"/>
+  <div class="text">
+  <h1 class="animate-text">Melona</h1>
+  <h2 class="animate-text">Php 35</h2>
+  <h3 class="animate-text">Melona is a South Korean ice pop, manufactured
+  by Binggrae Co. Ltd. Although the product is called "Melona" and 
+  is identified by its melon flavor, the ice pop also comes in other 
+  fruit flavors, such as strawberry and coconut. </h3>
+ </div>
+  </div>
+  </div>
+  </body>
+ </html>
